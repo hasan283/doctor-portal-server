@@ -47,6 +47,9 @@ async function run() {
         })
 
 
+        app.get('/', (req, res) => {
+            res.send('Hero meets hero ku')
+        })
 
         app.get('/admin/:email', async (req, res) => {
             const email = req.params.email;
